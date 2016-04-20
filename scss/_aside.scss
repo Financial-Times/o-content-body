@@ -1,0 +1,70 @@
+@mixin oContentBodyAside {
+	@include oContentBodyContentBox;
+	@include oContentBodyContentBoxBorderAll;
+}
+
+@mixin oContentBodyAsideInline {
+	@include oContentBodyContentBoxInline;
+	p {
+		margin: 5px 0 0;
+	}
+}
+
+@mixin oContentBodyAsideWithBottomImage {
+// eg. pullquote / big number with image at bottom
+// how to do the nesting?
+// .n-content-pullquote--with-image {
+// 	padding-bottom: 0;
+// 	.n-content-pullquote__content {
+// 		padding-bottom: 16px;
+// 	}
+// }
+}
+
+@mixin oContentBodyAsideTitlePlaceholder() {
+	margin: -40px 0 8px 10px;
+}
+
+@mixin oContentBodyAsideTitle() {
+	display: inline-block;
+	padding: 10px;
+	padding-bottom: 0;
+	margin: 0;
+	background-color: oColorsGetPaletteColor('pink');
+}
+
+@mixin oContentBodyAsideHeadline {
+	margin: 8px 16px;
+	color: getColor('cold-3');
+	p {
+		margin: 0;
+	}
+}
+
+@mixin oContentBodyAsideBody {
+	margin-left: 16px;
+	margin-right: 16px;
+	clear: left;
+	p {
+		margin: 5px 0 0;
+	}
+	ul,
+	ol {
+		padding-left: 20px;
+	}
+}
+
+@mixin oContentAsideFooter {
+  margin-top: 5px;
+}
+
+@mixin oContentBodyAsidePullquote {
+	&:before {
+		@include oFtIconsGetSvg(pullquote, oColorsGetPaletteColor('cold-1'), 26);
+		content: "";
+		position: absolute;
+		top: -16px;
+		left: 20px;
+		background-color: oColorsGetPaletteColor('pink');
+	}
+}

@@ -1,0 +1,16 @@
+////
+/// @group general
+/// @link http://registry.origami.ft.com/components/o-content-body
+////
+
+// import external dependencies
+@import 'o-colors/main';
+
+// import internal dependencies
+@import 'scss/_blockquotes';
+
+@if $o-content-body-is-silent == false {
+
+// put all class definitions in here
+
+}

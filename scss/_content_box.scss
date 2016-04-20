@@ -1,0 +1,16 @@
+@mixin oContentBodyContentBox() {
+	box-sizing: border-box;
+	position: relative;
+	clear: left;
+	margin: 24px 0 16px;
+	padding: 16px 0;
+	width: 100%;
+}
+
+@mixin oContentBodyContentBoxInline() {
+	float: left;
+	@include oGridRespondTo(S) {
+		max-width: 300px;
+		margin-right: 24px;
+	}
+}

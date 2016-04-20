@@ -1,0 +1,11 @@
+{
+  "name": "o-content-body",
+  "main": ["main.scss"],
+  "ignore": [
+    ".circle.yml"
+  ],
+  "dependencies": {
+    "o-colors": ">=2.5.0 <4",
+    "o-ft-icons": "^3.4.0"
+  }
+}
