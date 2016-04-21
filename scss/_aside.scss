@@ -11,14 +11,12 @@
 }
 
 @mixin oContentBodyAsideWithBottomImage {
-// eg. pullquote / big number with image at bottom
-// how to do the nesting?
-// .n-content-pullquote--with-image {
-// 	padding-bottom: 0;
-// 	.n-content-pullquote__content {
-// 		padding-bottom: 16px;
-// 	}
-// }
+	padding-bottom: 0;
+	p {
+		div & {
+			padding-bottom: 16px;
+		}
+	}
 }
 
 @mixin oContentBodyAsideTitlePlaceholder() {
@@ -54,7 +52,7 @@
 	}
 }
 
-@mixin oContentAsideFooter {
+@mixin oContentBodyAsideFooter {
   margin-top: 5px;
 }
 

@@ -2,15 +2,122 @@
 /// @group general
 /// @link http://registry.origami.ft.com/components/o-content-body
 ////
-
-// import external dependencies
 @import 'o-colors/main';
+@import 'o-ft-icons/main';
 
-// import internal dependencies
 @import 'scss/_blockquotes';
+@import 'scss/_borders';
+@import 'scss/_content_box';
+@import 'scss/_data_table';
+@import 'scss/_general';
+@import 'scss/_images';
+@import 'scss/_video';
+@import 'scss/_wrapped_aside_general';
+@import 'scss/_wrapped_body_general';
 
 @if $o-content-body-is-silent == false {
 
-// put all class definitions in here
+  // Wrappers - Body
+  .o-content-body-wrapper {
+    @include oContentBodyWrapper;
+  }
+  .o-content-body-wrapper--with-inline-asides {
+    @include oContentBodyWrapperWithInlineAsides;
+  }
 
+  // Wrappers - Asides
+  .o-content-body-aside-wrapper {
+    @include oContentBodyAsideWrapper;
+  }
+  .o-content-body-aside-wrapper--inline {
+    @include oContentBodyAsideWrapperInline;
+  }
+
+  // General
+	.o-content-body-footer {
+		@include oContentBodyFooter;
+	}
+
+	// Asides
+	.o-content-body-aside {
+		@include oContentBodyAside
+	}
+	.o-content-body-aside--inline {
+		@include oContentBodyAsideInline;
+	}
+	.o-contnet-body-aside--with-bottom-image {
+		@include oContentBodyAsideWithBottomImage;
+	}
+	.o-content-body-aside__title-placeholder {
+		@include oContentBodyAsideTitlePlaceholder;
+	}
+	.o-content-body-aside__title {
+		@include oContnetBodyAsideTitle;
+	}
+	.o-content-body-aside__headline {
+		@include oContentBodyAsideHeadline;
+	}
+	.o-content-body-aside__body {
+		@include oContentBodyAsideBody;
+	}
+	.o-content-body-aside__footer {
+		@include oContentBodyAsideFooter;
+	}
+	.o-content-body-aside--pullquote {
+		@include oContentBodyAsidePullquote;
+	}
+
+	// Blockquotes
+	.o-content-body-blockquote {
+		@include oContentBodyBlockquote;
+	}
+
+	// Borders
+	.o-content-body-border--all {
+		@include oContentBodyBorderAll;
+	}
+	.o-content-body-border-left {
+		@include oContentBodyBorderLeft;
+	}
+
+	// Content Box
+	.o-content-body-content-box {
+		@include oContentBodyContentBox;
+	}
+	.o-content-body-content-box--inline {
+		@include oContentBodyContentBoxInline;
+	}
+
+	// Data Table
+	.o-content-body-data-table {
+		@include oContentBodyDataTable;
+	}
+
+	// Images
+	.o-content-body-image {
+		@include oContentBodyImage;
+	}
+	.o-content-body-image--inline {
+		@include oContentBodyImageInline;
+	}
+	.o-content-body-image--thin {
+		@include oContentBodyImageThin;
+	}
+	.o-content-body-image__placeholder {
+		@include oContentBodyImagePlaceholder;
+	}
+
+	// Video
+	.o-content-body-video {
+		@include oContentBodyVideo;
+	}
+	.o-content-body-video--brightcove {
+		@include oContentBodyVideoBrightcove;
+	}
+	.o-content-body-video--you-tube {
+		@include oContentBodyVideoYouTube;
+	}
+	.o-content-body-video__placeholder {
+		@include oContentBodyVideoPlaceholder;
+	}
 }

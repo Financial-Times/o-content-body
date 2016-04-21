@@ -1,27 +1,20 @@
-// TO DO convert this into oContentBodyVideo...
-
-.n-content-video {
+@mixin oContentBodyVideo {
 	position: relative;
 	clear: left;
 	margin: 0 auto 1em;
 	max-width: 100%;
-
-	@media print {
-		display: none;
-	}
 }
 
-.n-content-video--brightcove {
+@mixin oContentBodyVideoBrightcove {
 	width: 680px;
 }
 
-.n-content-video--youtube {
+@mixin oContentBodyVideoYouTube {
 	width: 560px;
 }
 
-.n-content-video__placeholder {
+@mixin oContentBodyVideoPlaceholder {
 	padding-top: 56.25%;
-
 	img,
 	video,
 	iframe {

@@ -1,25 +1,3 @@
-// Out of the box asides - either inline or full width
-
-@mixin oContentBodyAsideInlineWrapper {
-	@include oContentBodyAside;
-	@include oContentBodyAsideInline;
-	@include oContentBodyBorderAll;
-	h3 {
-		@include oContentBodyAsideTitle;
-		div & {
-			@include oContentBodyAsideTitlePlaceholder;
-		}
-	}
-	h4 {
-		@include oContentBodyAsideHeadline;
-	}
-	p {
-		div & {
-			@include oContentBodyAsideBody;
-		}
-	}
-}
-
 @mixin oContentBodyAsideWrapper {
 	@include oContentBodyAside;
 	@include oContentBodyBorderAll;
@@ -37,4 +15,12 @@
 			@include oContentBodyAsideBody;
 		}
 	}
+	footer {
+		@include oContentBodyAsideFooter;
+	}
+}
+
+@mixin oContentBodyAsideWrapperInline {
+	@include oContentBodyAsideWrapper;
+	@include oContentBodyAsideInline;
 }

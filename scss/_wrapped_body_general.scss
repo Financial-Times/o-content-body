@@ -2,10 +2,21 @@
 
 @mixin oContentBodyWrapper {
 
+	figure {
+		@include oContentBodyImage;
+		div {
+			@include oContentBodyImagePlaceholder;
+		}
+	}
+
+	blockquote {
+		@include oContentBodyBlockquote;
+	}
 }
 
 // Version of the wrapper that includes inline asides
 
 @mixin oContentBodyWrapperWithInlineAsides {
-	
+	@include oContentBodyWrapper;
+	@include oContentBodyAsideInlineWrapper;
 }
