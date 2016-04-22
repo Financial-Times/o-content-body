@@ -28,5 +28,7 @@
 // Version of the wrapper that includes inline asides
 @mixin oContentBodyWrapperWithInlineAsides {
 	@include oContentBodyWrapper;
-	@include oContentBodyAsideInlineWrapper;
+	aside {
+		@include oContentBodyAsideWrapperInline;
+	}
 }

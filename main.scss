@@ -4,22 +4,22 @@
 ////
 @import 'o-colors/main';
 @import 'o-ft-icons/main';
+@import 'o-grid/main';
 
-@import 'scss/_color_use_cases';
+@import 'scss/color_use_cases';
 
-@import 'scss/_wrapped_aside_general';
-@import 'scss/_wrapped_body_general';
-@import 'scss/_wrapped_image_general';
+@import 'scss/wrapped_aside_general';
+@import 'scss/wrapped_body_general';
+@import 'scss/wrapped_image_general';
 
-@import 'scss/_aside';
-@import 'scss/_blockquote';
-@import 'scss/_borders';
-@import 'scss/_content_box';
-@import 'scss/_data_table';
-@import 'scss/_general';
-@import 'scss/_images';
-@import 'scss/_pullquote';
-@import 'scss/_video';
+@import 'scss/aside';
+@import 'scss/blockquote';
+@import 'scss/borders';
+@import 'scss/content_box';
+@import 'scss/general';
+@import 'scss/images';
+@import 'scss/pullquote';
+@import 'scss/video';
 
 @if $o-content-body-is-silent == false {
 
@@ -58,7 +58,7 @@
 		@include oContentBodyAsideTitlePlaceholder;
 	}
 	.o-content-body-aside__title {
-		@include oContnetBodyAsideTitle;
+		@include oContentBodyAsideTitle;
 	}
 	.o-content-body-aside__headline {
 		@include oContentBodyAsideHeadline;

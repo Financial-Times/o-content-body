@@ -1,22 +1,28 @@
 @mixin oContentBodyAsideWrapper {
 	@include oContentBodyAside;
 	@include oContentBodyBorderAll;
-	h3 {
-		@include oContentBodyAsideTitle;
-		div & {
-			@include oContentBodyAsideTitlePlaceholder;
+
+	div:first-child {
+		@include oContentBodyAsideTitlePlaceholder;
+		h3 {
+			@include oContentBodyAsideTitle;
 		}
 	}
+
 	h4 {
 		@include oContentBodyAsideHeadline;
 	}
-	p {
-		div & {
-			@include oContentBodyAsideBody;
-		}
+
+	div:not(:first-child) {
+		@include oContentBodyAsideBody;
 	}
+
 	footer {
 		@include oContentBodyAsideFooter;
+	}
+
+	blockquote {
+		@include oContentBodyAsidePullquote;
 	}
 }
 

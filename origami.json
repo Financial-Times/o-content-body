@@ -6,7 +6,7 @@
 	"supportStatus": "???",
 	"demosDefaults": {
 		"sass": "demos/src/demo.scss",
-		"dependencies": ["o-grid@^4.0.0", "o-typography@^3.0.0"]
+		"dependencies": ["o-grid@^4.0.0", "o-typography@migrate-from-n-content-body"]
 	},
 	"ci": {
 		"circle": "https://circleci.com/api/v1/project/Financial-Times/o-content-body"
@@ -14,13 +14,13 @@
 	"demos": [
 		{
 			"name": "body",
-			"template": "demos/src/body.mustache",
+			"template": "demos/src/body-wrapper.mustache",
 			"expanded": true,
 			"description": ""
 		},
 		{
 			"name": "asides",
-			"template": "demos/src/asides.mustache",
+			"template": "demos/src/asides-wrapper.mustache",
 			"expanded": true,
 			"description": ""
 		}

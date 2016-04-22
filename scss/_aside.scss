@@ -1,6 +1,6 @@
 @mixin oContentBodyAside {
 	@include oContentBodyContentBox;
-	@include oContentBodyContentBoxBorderAll;
+	@include oContentBodyBorderAll;
 }
 
 @mixin oContentBodyAsideInline {
@@ -12,10 +12,8 @@
 
 @mixin oContentBodyAsideWithBottomImage {
 	padding-bottom: 0;
-	p {
-		div & {
-			padding-bottom: 16px;
-		}
+	div:not(:first-child) {
+		padding-bottom: 16px;
 	}
 }
 
@@ -28,7 +26,7 @@
 	padding: 10px;
 	padding-bottom: 0;
 	margin: 0;
-	background-color: oColorsFor(o-content-body-background, background);
+	background-color: oColorsGetColorFor(o-content-body-background, background);
 }
 
 @mixin oContentBodyAsideHeadline {
