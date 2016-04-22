@@ -1,0 +1,28 @@
+{
+	"description": "FT brand content element styles",
+	"origamiType": "module",
+	"origamiVersion": 1,
+	"support": "https://github.com/Financial-Times/o-content-body/issues",
+	"supportStatus": "???",
+	"demosDefaults": {
+		"sass": "demos/src/demo.scss",
+		"dependencies": ["o-grid@^4.0.0", "o-typography@migrate-from-n-content-body"]
+	},
+	"ci": {
+		"circle": "https://circleci.com/api/v1/project/Financial-Times/o-content-body"
+	},
+	"demos": [
+		{
+			"name": "body",
+			"template": "demos/src/body-wrapper.mustache",
+			"expanded": true,
+			"description": ""
+		},
+		{
+			"name": "asides",
+			"template": "demos/src/asides-wrapper.mustache",
+			"expanded": true,
+			"description": ""
+		}
+	]
+}

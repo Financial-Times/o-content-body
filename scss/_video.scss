@@ -1,0 +1,27 @@
+@mixin oContentBodyVideo {
+	position: relative;
+	clear: left;
+	margin: 0 auto 1em;
+	max-width: 100%;
+}
+
+@mixin oContentBodyVideoBrightcove {
+	width: 680px;
+}
+
+@mixin oContentBodyVideoYouTube {
+	width: 560px;
+}
+
+@mixin oContentBodyVideoPlaceholder {
+	padding-top: 56.25%;
+	img,
+	video,
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}

@@ -1,0 +1,7 @@
+@mixin oContentBodyBorderAll {
+	border: 1px solid oColorsGetColorFor(o-content-body-border, border);
+}
+
+@mixin oContentBodyBorderLeft {
+	border-left: 1px solid oColorsGetColorFor(o-content-body-border, border);
+}

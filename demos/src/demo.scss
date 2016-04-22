@@ -1,0 +1,14 @@
+$o-content-body-is-silent: false;
+
+@import '../../main';
+
+html {
+	@include oColorsFor(page);
+	overflow-y: scroll;
+
+	// font-family: $o-typography-sans;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-rendering: optimizeSpeed;
+	-webkit-font-smoothing: antialiased;
+}
