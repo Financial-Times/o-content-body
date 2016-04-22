@@ -1,0 +1,10 @@
+@mixin oContentBodyPullquote {
+	&:before {
+		@include nextIcon(pullquote,  oColorsFor(o-content-body-text, text), 26);
+		content: "";
+		position: absolute;
+		top: -16px;
+		left: 20px;
+		background-color: oColorsFor(o-content-body-background, background);
+	}
+}

@@ -1,12 +1,14 @@
 // Will be very basic - most of it that can be targeted at html elements done in typography
+@mixin oContentBodyWrapperWithoutImages {
+	margin-bottom: 40px;
 
-@mixin oContentBodyWrapper {
+	> first-child {
+		margin-top: 0;
+	}
 
-	figure {
-		@include oContentBodyImage;
-		div {
-			@include oContentBodyImagePlaceholder;
-		}
+	> footer {
+		margin-top: 40px;
+		clear: both;
 	}
 
 	blockquote {
@@ -14,8 +16,16 @@
 	}
 }
 
-// Version of the wrapper that includes inline asides
+@mixin oContentBodyWrapper {
+	@include oContentBodyWrapperWithoutImages;
 
+	figure {
+		@include oContentBodyImageWrapper;
+	}
+
+}
+
+// Version of the wrapper that includes inline asides
 @mixin oContentBodyWrapperWithInlineAsides {
 	@include oContentBodyWrapper;
 	@include oContentBodyAsideInlineWrapper;

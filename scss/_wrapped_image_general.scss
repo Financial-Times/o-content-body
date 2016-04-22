@@ -1,0 +1,7 @@
+// Will only work for full width images
+@mixin oContentBodyImageWrapper {
+	@include oContentBodyImage;
+	div {
+		@include oContentBodyImagePlaceholder;
+	}
+}

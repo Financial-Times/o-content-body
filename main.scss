@@ -5,15 +5,21 @@
 @import 'o-colors/main';
 @import 'o-ft-icons/main';
 
-@import 'scss/_blockquotes';
+@import 'scss/_color_use_cases';
+
+@import 'scss/_wrapped_aside_general';
+@import 'scss/_wrapped_body_general';
+@import 'scss/_wrapped_image_general';
+
+@import 'scss/_aside';
+@import 'scss/_blockquote';
 @import 'scss/_borders';
 @import 'scss/_content_box';
 @import 'scss/_data_table';
 @import 'scss/_general';
 @import 'scss/_images';
+@import 'scss/_pullquote';
 @import 'scss/_video';
-@import 'scss/_wrapped_aside_general';
-@import 'scss/_wrapped_body_general';
 
 @if $o-content-body-is-silent == false {
 
@@ -86,11 +92,6 @@
 	}
 	.o-content-body-content-box--inline {
 		@include oContentBodyContentBoxInline;
-	}
-
-	// Data Table
-	.o-content-body-data-table {
-		@include oContentBodyDataTable;
 	}
 
 	// Images

@@ -1,7 +1,7 @@
 @mixin oContentBodyBorderAll {
-	border: 1px solid oColorsGetPaletteColor('warm-3');
+	border: 1px solid oColorsFor(o-content-body-border, border);
 }
 
 @mixin oContentBodyBorderLeft {
-	border-left: 1px solid oColorsGetPaletteColor('warm-3');
+	border-left: 1px solid oColorsFor(o-content-body-border, border);
 }
